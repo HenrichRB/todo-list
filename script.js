@@ -12,7 +12,16 @@ window.addEventListener('load', () =>{
         let $listaTarefa = document.getElementById('listaTarefa');
         let $task = document.getElementById('task');
         let tarefaAtual = $task.value;
-        $listaTarefa.innerHTML += `<h3>${tarefaAtual}</h3>`
+        $listaTarefa.innerHTML += `
+        <div class="itemTarefa">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            </div>
+            <h3>
+                ${tarefaAtual}
+            </h3>
+            <button type="button" class="btn btn-danger">Danger</button>
+        </div>`
     })
 
     // botão de cancelar
